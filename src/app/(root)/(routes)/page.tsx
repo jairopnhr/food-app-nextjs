@@ -1,4 +1,11 @@
-export default function SetupPage() {
-  return (<>Ola</>)
-    
+"use client"
+
+ const  SetupPage = () => {
+  return( 
+  <div>
+    Store Model 
+ 
+  </div>
+    )
 }
+export default SetupPage;

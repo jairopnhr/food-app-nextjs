@@ -1,10 +1,4 @@
-interface SetupLayoutProps
-{
-  children: React.ReactNode;
-}
-
-
-
+interface SetupLayoutProps{children: React.ReactNode;}
 
 export default function SetupLayout({children}:SetupLayoutProps ) {
   return (
