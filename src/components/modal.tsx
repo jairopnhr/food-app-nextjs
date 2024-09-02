@@ -13,9 +13,14 @@ interface ModalProps
 }
 export const Modal = ({title,description,isOpen,onClose,children}:ModalProps)=>
     {
+        const onChnage =(open:boolean)=>
+                {
+                if(!open)
+                    onClose();
+                }
     return(
                 <div>
-                    <Dialog open={isOpen}>
+                    <Dialog open={isOpen} onOpenChange={onChnage}>
                         <DialogContent>
                             <DialogHeader>
                                 <DialogTitle>{title}</DialogTitle>
